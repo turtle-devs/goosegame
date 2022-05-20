@@ -6,7 +6,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-image: url('/images/grassrn.jpg');
+  background-image: url('grassrn.jpg');
   background-size: 10% 10%;
   font-family: 'Source Sans Pro', sans-serif;
   display: flex;
@@ -19,7 +19,7 @@ html, body {
   position: relative;
   width: 500px;
   height: 240px;
-  background-image: url('/images/grassrn.jpg');
+  background-image: url('grassrn.jpg');
   background-size: 10% 10%;
   transform: scale(3);
   -webkit-animation: rainbow 5s  infinite;
@@ -112,13 +112,13 @@ button:hover {
   left: 3px;
   width: 16px;
   height: 16px;
-  background: url(/images/arrow.png) no-repeat no-repeat;
+  background: url(arrow.png) no-repeat no-repeat;
   image-rendering: pixelated;
 }
 .Character_sprite {
   overflow: hidden;
   
-  background: url(/images/characters.gif);
+  background: url(characters.gif);
   
   image-rendering: pixelated;
   
@@ -134,21 +134,21 @@ button:hover {
 }
 .Character[data-direction="left_walking"] .Character_sprite {
   background-position-x: 0px;
-  background: url(/images/characterswalking.gif);
+  background: url(characterswalking.gif);
   
   image-rendering: pixelated;
   
 }
 .Character[data-direction="right_walking"] .Character_sprite {
   background-position-x: 16px;
-  background: url(/images/characterswalking.gif);
+  background: url(characterswalking.gif);
   
   image-rendering: pixelated;
   
 }
 
 .Character_shadow {
-  background: url(/images/shadow.png) no-repeat no-repeat;
+  background: url(shadow.png) no-repeat no-repeat;
 }
 
 .Character_name-container {
@@ -179,7 +179,7 @@ button:hover {
 }
 
 .food_sprite {
-  background:url(/images/curry.png);
+  background:url(curry.png);
   
   image-rendering: pixelated;
   
@@ -188,15 +188,15 @@ button:hover {
 
 }
 .food_shadow {
-  background: url(/images/food-shadow.png);
+  background: url(/food-shadow.png);
   image-rendering: pixelated;
 }
 .poop_shadow {
-  background: url(/images/food-shadow.png);
+  background: url(food-shadow.png);
   image-rendering: pixelated;
 }
 .poop_sprite {
-  background: url(/images/poop.png);
+  background: url(poop.png);
   image-rendering: pixelated;
   
 }
