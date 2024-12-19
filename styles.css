@@ -114,13 +114,13 @@ button:hover {
   left: 3px;
   width: 16px;
   height: 16px;
-  background: url(images/arrow.png) no-repeat no-repeat;
+  background: url('images/arrow.png') no-repeat no-repeat;
   image-rendering: pixelated;
 }
 .Character_sprite {
   overflow: hidden;
   
-  background: url(images/characterswalking.gif);
+  background: url('images/characterswalking.gif');
   
   image-rendering: pixelated;
 
@@ -136,7 +136,7 @@ button:hover {
   
 }
 .Character[data-direction="left_walking"] .Character_sprite {
-  background: url(images/characterswalking.gif);
+  background: url('images/characterswalking.gif');
   background-position-x: 0px;
   
   
@@ -145,14 +145,14 @@ button:hover {
 }
 .Character[data-direction="right_walking"] .Character_sprite {
   
-  background: url(images/characterswalking.gif);
+  background: url('images/characterswalking.gif');
   background-position-x: 16px;
   
   
 }
 
 .Character_shadow {
-  background: url(images/shadow.png) no-repeat no-repeat;
+  background: url('images/shadow.png') no-repeat no-repeat;
 }
 
 .Character_name-container {
@@ -186,7 +186,7 @@ button:hover {
 }
 
 .food_sprite {
-  background:url(images/food.png);
+  background:url('images/food.png');
   
   image-rendering: pixelated;
    z-index:1;
@@ -196,16 +196,16 @@ button:hover {
 
 }
 .food_shadow {
-  background: url(images/food-shadow.png);
+  background: url('images/food-shadow.png');
   image-rendering: pixelated;
 }
 .curryrotten_shadow {
-  background: url(images/food-shadow.png);
+  background: url('images/food-shadow.png');
   image-rendering: pixelated;
   z-index:2;
 }
 .curryrotten_sprite {
-  background: url(images/Curryrotten.gif);
+  background: url('images/Curryrotten.gif');
   image-rendering: pixelated;
   z-index:2;
   
