@@ -1,16 +1,113 @@
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css"> 
+	<title>goose menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="icon" type="image/x-icon" href="/images/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles.css" type="text/css">
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+	<script src="https://replit.com/public/js/repl-auth-v2.js"></script>
+	<script>
+		window.OneSignal = window.OneSignal || [];
+		OneSignal.push(function() {
+			OneSignal.init({
+				appId: "f5b4920a-80f8-4d7a-a3d1-ef82b37df83b",
+				safari_web_id: "web.onesignal.auto.05737452-6fb0-4a74-aaf2-b68bc5a2ed6a",
+				notifyButton: {
+					enable: true,
+				},
+			});
+		});
+	</script>
+	<script src="https://accounts.google.com/gsi/client" async defer></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2425815698661078"
+     crossorigin="anonymous"></script>
+	<script type="module">
+		const user = await getUserInfo()
+		const loggedinuser = document.getElementById(`logged-in-username`)
+		loggedinuser.innerHTML = `Logged in with Replit as ${user.name}`
+	</script>
 </head>
+
 <body>
-    <h1 class="h2">TurtleProject</h1>
-    <h1 class="p2">Lorem Ipusums</p>
-    <p class="p2">Lorem Ipusum</p>
-    <p class="p2">Lorem Ipusum</p>
-    <p class="p2">Lorem Ipusum</p>
+	<center>
+		<div id="g_id_onload" data-client_id="1085811017462-jls85p7ge8068jb6vuu1c1e27gch0t1r.apps.googleusercontent.com"
+			data-callback="handleCredentialResponse">
+		</div>
+		<div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with"
+			data-shape="rectangular" data-logo_alignment="left">
+
+		</div><br>
+		<button id="LoginWithReplitButton" onclick="LoginWithReplit(); closeLoginWithReplitButton();">Login with Replit</button>
+		<div id="repl-login-container">
+			<h2 id="logged-in-username"></h2>
+		</div>
+		<script>
+			function decodeJwtResponse(token) {
+				var base64Url = token.split('.')[1];
+				var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+				var jsonPayload = decodeURIComponent(window.atob(base64).split('').map(function (c) {
+					return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+				}).join(''));
+
+				return JSON.parse(jsonPayload);
+			}
+			function handleCredentialResponse(response) {
+				const responsePayload = decodeJwtResponse(response.credential);
+				console.log("ID: " + responsePayload.sub);
+				console.log('Full Name: ' + responsePayload.name);
+				console.log('Given Name: ' + responsePayload.given_name);
+				console.log('Family Name: ' + responsePayload.family_name);
+				console.log("Image URL: " + responsePayload.picture);
+				console.log("Email: " + responsePayload.email);
+			}
+		</script>
+
+		<script>
+			//hehe boi
+			var css = '#rainbow {animation-name:test; animation-duration:4s; animation-iteration-count:infinite; } @keyframes test{ 0%{color:#ff3300} 20%{color:#00ff00} 40%{color:#ffff00} 60%{color:#0000ff} 80%{color:#00ffff} 100%{color:#ff0000}', head = document.head || document.getElementsByTagName('head')[0], style = document.createElement('style'); style.type = 'text/css'; if (style.styleSheet) {style.styleSheet.cssText = css;} else {style.appendChild(document.createTextNode(css));} head.appendChild(style);
+		</script>
+		
+	
+		<h2>
+			<marquee>what is goody my gang</marquee>
+		</h2>
+		<h1 id="rainbow">goose game, kind of.</h1>
+
+		<h2>made by three idiots lol >:)</h2>
+		<script>function joinGame() {window.location.href = "game.html"}</script>
+		<script>function credits() {window.location.replace("credits.html")} function words() {window.location.replace("https://ask.turtlesda.repl.co/")}
+
+			function discord() {window.location.replace("https://discord.gg/m8y5hrp8aq")}
+			function sand() {
+				window.location.replace("https://sandsimulation.turtlesda.repl.co/");
+			} function mini() {
+				window.location.replace("minigames.html")
+			}
+		</script>
+		<script>function updates() {window.location.replace("updates.html")}</script>
+		<button onclick="joinGame()">join?</button><br>
+		<!--might want to change spacing because theres only a single br tag!-->
+		<button onclick="credits()">credits</button><br>
+		<button onclick="discord()">discord</button><br>
+		<button onclick="mini()">minigames</button><br>
+		<!--<iframe src="https://discord.com/widget?id=1032076671051907102&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>!-->
+		<!--
+	  <script type="text/javascript">
+    var alerted = localStorage.getItem('alerted') || '';
+    if (alerted != 'yes') {
+     update ="Version 1.0 | goosegame\r\n 1. Changes: \r\n 1. goose game is out of beta \r\n 2. Kicked a few players from the game because they were bugging playerCollision and updated anticheat and afk systems \r\n 3. Recruited 3 new testers (they chose not to have their names disclosed)";
+     localStorage.setItem('alerted','yes');
+    document.getElementById("update").textContent="Updates: " + update;
+    }
+</script>
+	  !-->
+		<script src="script.js"></script>
+	</center>
+
 </body>
+
 </html>
